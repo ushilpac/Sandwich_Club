@@ -3,6 +3,7 @@ package com.udacity.sandwichclub;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -55,7 +56,7 @@ public class DetailActivity extends AppCompatActivity {
         populateUI(sandwich);
         Picasso.with(this)
                 .load(sandwich.getImage())
-                .placeholder(R.mipmap.sandwich_default)
+                .placeholder(R.drawable.default_image)
                 .into(ingredientsIv);
 
         setTitle(sandwich.getMainName());
@@ -76,12 +77,9 @@ public class DetailActivity extends AppCompatActivity {
         List<String> knownList = sandwich.getAlsoKnownAs();
 
         if(knownList.size()>0) {
-            if(known_as_label_tv.getVisibility() == View.INVISIBLE) {
-                known_as_label_tv.setVisibility(View.VISIBLE);
-            }
-            knownAs.setText("" +knownList);
+            knownAs.setText(TextUtils.join(", ",knownList));
         }else{
-            known_as_label_tv.setVisibility(View.INVISIBLE);
+            knownAs.setText("Data not available");
         }
 
         TextView origin = (TextView) findViewById(R.id.origin_tv_value);
@@ -90,7 +88,7 @@ public class DetailActivity extends AppCompatActivity {
         TextView  ingredient = (TextView) findViewById(R.id.ingredient_tv_value);
         List<String> ingredientList = sandwich.getIngredients();
         if(ingredientList.size()>0) {
-            ingredient.setText("" + sandwich.getIngredients());
+            ingredient.setText(TextUtils.join(", ",sandwich.getIngredients()));
         }
 
         TextView description = (TextView) findViewById(R.id.description_tv_value);
