@@ -1,26 +1,26 @@
-# Sandwich Club Project Starter Code
+# Poject - Sandwich Club
 
-## Project Overview
-In this project, you will complete the **Sandwich Club** app to
-show the details of each sandwich once it is selected.
+Sandwich Club is an android app which displays list of different varities of sandwiches and details of each sandwich like ingredient, origin and other names.
 
-## Why this Project
+Submitted by: Shilpa Chaudhary
 
-Building a layout and populating its fields from data received as JSON
-is a common task for Android Developers. Although JSON parsing is usually
-done using libraries, writing the JSON parsing for  this project will
-help you to better understand how it is processed.
+Time spent: 12 hours 
 
-## What Will I Learn?
-Through this project, you will:
-- Learn how to submit projects for review
-- Practice JSON parsing to a model object
-- Design an activity layout
-- Populate all fields in the layout accordingly
+## User Stories
 
-## How Do I Complete this Project?
-Download the [Sandwich Club app starter code.](https://github.com/udacity/sandwich-club-starter-code)
+The following required functionality is completed:
 
-Design the layout for the detail activity so the different elements
-display in a sensible way. Implement the JSON parsing in JsonUtils so it
-produces a Sandwich Object that can be used to populate the UI that you designed.
+* [ ] User can see the list of sandwiches in listview.
+* [ ] User can tap on each sandwich and see the detailed information like images, place of origin,ingredient,other name and description.
+
+
+## Screenshots of app
+
+<img src='http://i.imgur.com/CbAz4xR' />
+
+## Open-source libraries used
+- [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+
+
+
+
