@@ -16,7 +16,7 @@ The following required functionality is completed:
 
 ## Screenshots of app
 
-<img src='http://i.imgur.com/CbAz4xR' />
+<img src='https://i.imgur.com/CbAz4xR.png' />
 
 ## Open-source libraries used
 - [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
